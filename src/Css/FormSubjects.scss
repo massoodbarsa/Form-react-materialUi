@@ -1,0 +1,15 @@
+.FormSubjects{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 60%
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.error{
+    border: 1px solid red
+}
