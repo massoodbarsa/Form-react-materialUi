@@ -1,0 +1,10 @@
+.Form, .FormSubjects {
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.FormSubjects {
+  width: 100%; }
+
+.AppBar {
+  border: 2px solid red; }

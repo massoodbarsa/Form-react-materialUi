@@ -1,0 +1,6 @@
+.FormSubjects {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin: 30px 0px;
+  width: 60%; }
