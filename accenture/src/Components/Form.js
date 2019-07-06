@@ -43,20 +43,20 @@ class Form extends Component {
       firstName,
       lastName,
       email,
-      phoneNumber,
+      mobile,
       city,
       postcode,
-      adres
+      address
     } = this.state;
 
     const values = {
       firstName,
       lastName,
       email,
-      phoneNumber,
+      mobile,
       city,
       postcode,
-      adres
+      address
     };
 
     if (result == false) {

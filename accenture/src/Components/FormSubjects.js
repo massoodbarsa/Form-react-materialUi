@@ -19,37 +19,37 @@ class FormSubjects extends Component {
         <TextField
           defaultValue={values.firstname}
           onChange={handleChange("firstName")}
-          label="firstname"
+          label="Firstname"
         />
         <TextField
           defaultValue={values.lastName}
           onChange={handleChange("lastName")}
-          label="lastname"
+          label="Lastname"
         />
         <TextField
           defaultValue={values.email}
           onChange={handleChange("email")}
-          label="email"
+          label="Email"
         />
         <TextField
-          defaultValue={values.phoneNumber}
-          onChange={handleChange("phoneNumber")}
-          label="phonenumber"
+          defaultValue={values.mobile}
+          onChange={handleChange("mobile")}
+          label="Mobile"
         />
         <TextField
           defaultValue={values.city}
           onChange={handleChange("city")}
-          label="city"
+          label="City"
         />
         <TextField
           defaultValue={values.postcode}
           onChange={handleChange("postcode")}
-          label="postcode"
+          label="Postcode"
         />
         <TextField
-          defaultValue={values.adres}
-          onChange={handleChange("adres")}
-          label="adres"
+          defaultValue={values.address}
+          onChange={handleChange("address")}
+          label="Address"
         />
 
         <Button
