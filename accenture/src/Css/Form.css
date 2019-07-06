@@ -9,3 +9,6 @@
 .hiddenpage {
   height: 465px;
   justify-content: flex-end; }
+
+.AppBar {
+  margin-bottom: 10px; }

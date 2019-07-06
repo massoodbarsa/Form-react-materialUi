@@ -15,8 +15,6 @@ class Result extends Component {
   render() {
     const { values } = this.props;
 
-    console.log(values);
-
     return (
       <div className='result'>
           

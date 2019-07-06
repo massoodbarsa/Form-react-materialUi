@@ -5,6 +5,8 @@ import Button from "@material-ui/core/Button";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+// import { makeStyles } from '@material-ui/core/styles';
+import IconButton from "@material-ui/core/IconButton";
 
 import "../Css/Form.css";
 
@@ -18,7 +20,7 @@ class Form extends Component {
     mobile: "",
     city: "",
     postcode: "",
-    adres: ""
+    address: ""
   };
 
   handleResult = () => {
@@ -40,9 +42,15 @@ class Form extends Component {
   };
 
   handleClean = () => {
-    console.log("ridi");
-
-    this.setState({});
+    this.setState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      mobile: "",
+      city: "",
+      postcode: "",
+      address: ""
+    });
   };
 
   handleHide = () => {
@@ -83,11 +91,10 @@ class Form extends Component {
         return (
           <div className="Form">
             <div className="AppBar">
-              <AppBar position="static" color="primary">
+              <AppBar position="static">
                 <Toolbar>
-                  <Typography variant="h6" color="inherit">
-                    Photos
-                  </Typography>
+                  <IconButton edge="start" color="inherit" aria-label="Menu" />
+                  <Typography variant="h6">Fill in the form please!</Typography>
                 </Toolbar>
               </AppBar>
             </div>
@@ -105,14 +112,14 @@ class Form extends Component {
         );
       } else {
         return (
-          <div className='hiddenpage'>
+          <div className="hiddenpage">
             <Button
-            variant="contained"
-            color="primary"
-            onClick={this.handleShow}
-          >
-            show Form
-          </Button>
+              variant="contained"
+              color="primary"
+              onClick={this.handleShow}
+            >
+              show Form
+            </Button>
           </div>
         );
       }
@@ -120,11 +127,10 @@ class Form extends Component {
       return (
         <div className="result">
           <div className="AppBar">
-            <AppBar position="static" color="primary">
+            <AppBar position="static">
               <Toolbar>
-                <Typography variant="h6" color="inherit">
-                  Result
-                </Typography>
+                <IconButton edge="start" color="inherit" aria-label="Menu" />
+                <Typography variant="h6">Result</Typography>
               </Toolbar>
             </AppBar>
           </div>
