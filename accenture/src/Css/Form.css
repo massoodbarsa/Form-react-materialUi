@@ -1,4 +1,4 @@
-.Form, .FormSubjects {
+.Form, .FormSubjects, .hiddenpage {
   display: flex;
   flex-direction: column;
   width: 50%; }
@@ -6,5 +6,6 @@
 .FormSubjects {
   width: 100%; }
 
-.AppBar {
-  border: 2px solid red; }
+.hiddenpage {
+  height: 465px;
+  justify-content: flex-end; }

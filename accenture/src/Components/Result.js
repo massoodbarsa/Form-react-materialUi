@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import "../Css/Result.css";
 
-import FormControl from "@material-ui/core/FormControl";
+
 
 class Result extends Component {
   prevPage = e => {
@@ -18,7 +18,8 @@ class Result extends Component {
     console.log(values);
 
     return (
-      <div>
+      <div className='result'>
+          
         <List>
           <ListItemText primary="Firstname" secondary={values.firstName} />
 
